@@ -42,7 +42,7 @@ client.on('guildMemberAdd', guildMember =>{
 **3. What is your first and last name?:**
 
 After answering the above questions, please wait to have your roles assigned, and take a look at <#778417731493298207> and <#770779906140405810> in the meantime!`)
-  guildMember.guild.channels.cache.get('783908838989889606').send(`<@${guildMember.user.id}>`, welcomeEmbed);
+  guildMember.guild.channels.cache.get('770782712859590666').send(`<@${guildMember.user.id}>`, welcomeEmbed);
   console.log(`Welcomed ${guildMember.user.tag}`);
 });
 
@@ -60,4 +60,4 @@ client.on('message', message => {
 });
 
 //Keep as last line and dONT FUCKING PUBLISH ON THE WEB BECAUSE FUCKING SAFETY JIM BOBBY IS GOING TO FUCKING RESET YOUR TOKEN AND YOU'RE GONNA HAVE TO FUCKING COME BACK HERE AND FUCKING FIX IT, ALL BECASUE YOU WANTED SOMEONE TO SEE IT SO YOU SET IT TO PUBLIC. ITS NOT EVEN THAT BIG A DEAL IM JUST TIRED.
-//client.login('');
+client.login('');
