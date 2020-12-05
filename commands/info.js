@@ -10,12 +10,12 @@ module.exports = {
       .setThumbnail('https://cdn.discordapp.com/attachments/389124171814141956/783903181599932446/250_PNG.png')
       .setDescription('Bot info for nerds')
       .addFields(
-        { name: 'Version:', value: '1.0.0'},
-        { name: 'Language', value: "Javascript"},
-        { name: "Push date", value: "04.12.20"},
+        { name: 'Version:', value: "1.1.1"},
+        { name: 'Language', value: "Javascript"}, //not for long, I hate JavaScript, all my homies hate jacvasctipor.
+        { name: "Push date", value: "05.12.20"},
         { name: "Github Page", value: "https://github.com/250JonathanSanders/250VimyBot"}
       )
-      .setFooter('Bot written by FSgt Jonathan Sanders')
+      .setFooter('Bot developed by FSgt Jonathan Sanders')
 
 
     if(message.member.permissions.has("ADMINISTRATOR")){

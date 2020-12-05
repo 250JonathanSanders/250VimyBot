@@ -1,6 +1,6 @@
 {
   "name": "250bot",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Bot for the 250 Vimy RCACS discord server.",
   "main": "main.js",
   "scripts": {

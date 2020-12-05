@@ -1,18 +1,18 @@
-const Discord = require('discord.js');
+var Discord = require('discord.js');
 
-const client = new Discord.Client();
+var client = new Discord.Client();
 
-const prefix = 'v!';
+var prefix = 'v!';
 
-const fs = require('fs');
+var fs = require('fs');
 
 client.commands = new Discord.Collection(); //defines new collection
 
 
 //all of this hooks up the commands folder to this script.
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+var commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
-  const command = require(`./commands/${file}`);
+  var command = require(`./commands/${file}`);
 
   client.commands.set(command.name, command);
 }
@@ -56,8 +56,10 @@ client.on('message', message => {
 
   if(command === 'info' || command === 'information'){//I think this **** is obvious, even for me lmfao
     client.commands.get('Information').execute(message, args); //execute, not goddamn excecute
+  } else if(command == 'serverinfo'){
+    client.commands.get('ServerInfo').execute(message, args);
   }
 });
 
 //Keep as last line and dONT FUCKING PUBLISH ON THE WEB BECAUSE FUCKING SAFETY JIM BOBBY IS GOING TO FUCKING RESET YOUR TOKEN AND YOU'RE GONNA HAVE TO FUCKING COME BACK HERE AND FUCKING FIX IT, ALL BECASUE YOU WANTED SOMEONE TO SEE IT SO YOU SET IT TO PUBLIC. ITS NOT EVEN THAT BIG A DEAL IM JUST TIRED.
-client.login('');
+//client.login('');
